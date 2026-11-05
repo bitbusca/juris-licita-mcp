@@ -1,0 +1,67 @@
+{
+  "name": "juris-licita-mcp",
+  "version": "0.1.0",
+  "description": "Servidor MCP para advogados e licitantes: prazos processuais com feriados forenses por comarca, dias úteis, índices do Banco Central e correção monetária, editais abertos do PNCP, CPF/CNPJ e CEP. Avançado (DJEN, processos, análise de edital, Score do órgão) com chave BitBusca.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "juridico",
+    "advocacia",
+    "prazos processuais",
+    "feriados forenses",
+    "djen",
+    "licitacoes",
+    "pncp",
+    "editais",
+    "banco-central",
+    "correcao-monetaria",
+    "cnpj"
+  ],
+  "homepage": "https://github.com/bitbusca/juris-licita-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/bitbusca/juris-licita-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitbusca/juris-licita-mcp.git"
+  },
+  "license": "MIT",
+  "author": "BITSIS LTDA (BitBusca) <sac@bitbusca.net> (https://bitbusca.net)",
+  "mcpName": "io.github.bitbusca/juris-licita-mcp",
+  "type": "module",
+  "bin": {
+    "juris-licita-mcp": "dist/index.js"
+  },
+  "main": "dist/servidor.js",
+  "types": "dist/servidor.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node scripts/testar.mjs",
+    "start": "node dist/index.js",
+    "start:http": "node dist/index.js --http",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "prazos-br": "file:../prazos-br",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.6.3"
+  }
+}

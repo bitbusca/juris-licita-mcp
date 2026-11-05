@@ -1,0 +1,56 @@
+name: CI
+
+# Enquanto o prazos-br não estiver no npm, o package.json aponta para "file:../prazos-br":
+# o CI baixa os dois repositórios lado a lado e compila o prazos-br antes.
+# Quando o prazos-br for publicado, troque a dependência por "^0.1.0" e apague os passos marcados.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    name: Node ${{ matrix.node }} (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [20, 22, 24]
+        exclude:
+          - os: windows-latest
+            node: 20
+          - os: windows-latest
+            node: 22
+    defaults:
+      run:
+        working-directory: juris-licita-mcp
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: juris-licita-mcp
+      # (prazos-br local) — apagar quando a dependência vier do npm
+      - uses: actions/checkout@v4
+        with:
+          repository: bitbusca/prazos-br
+          path: prazos-br
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      # (prazos-br local) — apagar quando a dependência vier do npm
+      - name: Compila o prazos-br
+        working-directory: prazos-br
+        run: npm ci && npm run build
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+      - name: O binário sobe e responde --version
+        run: node dist/index.js --version
+      - name: Pacote contém só o necessário
+        if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        run: npm pack --dry-run

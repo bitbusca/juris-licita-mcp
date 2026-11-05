@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.bitbusca/juris-licita-mcp",
+  "title": "Juris Licita MCP",
+  "description": "Prazos com feriados forenses por comarca, DJEN, editais do PNCP, índices do BCB e CNPJ.",
+  "websiteUrl": "https://github.com/bitbusca/juris-licita-mcp",
+  "repository": {
+    "url": "https://github.com/bitbusca/juris-licita-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "juris-licita-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BITBUSCA_API_KEY",
+          "description": "Opcional. Liga o modo avançado (DJEN por OAB, processos, análise de edital). Chave grátis em https://bitbusca.net/desenvolvedor",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

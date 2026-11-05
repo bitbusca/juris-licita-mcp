@@ -1,0 +1,36 @@
+{
+ "_nota": "Recorte real da busca pública do PNCP (/api/search) em 05/11/2026, campos usados.",
+ "items": [
+  {
+   "title": "Edital nº 30/2026",
+   "description": "Registro de preços para aquisição de materiais de consumo, utensílios, insumos diversos, ferramentas e de materiais permanentes como linha branca e equipamentos destinados ao atendimento das necessidades das brigadas do PREVFOGO no Estado do Amazonas",
+   "item_url": "/compras/03659166002156/2026/135",
+   "numero_controle_pncp": "03659166002156-1-000135/2026",
+   "orgao_nome": "INSTITUTO BRASILEIRO DO MEIO AMBIENTE E DOS RECURSOS NATURAIS RENOVAVEIS-IBAMA",
+   "municipio_nome": "Manaus",
+   "uf": "AM",
+   "modalidade_licitacao_nome": "Pregão - Eletrônico",
+   "data_inicio_vigencia": "2026-11-05T08:00",
+   "data_fim_vigencia": "2026-11-17T10:00",
+   "valor_global": null,
+   "situacao_nome": "Divulgada no PNCP",
+   "data_publicacao_pncp": "2026-10-27T04:00:11.414245"
+  },
+  {
+   "title": "Edital nº PE12/2026",
+   "description": "Registro de preços para eventual e futura aquisição de gêneros alimentícios componentes da merenda escolar",
+   "item_url": "/compras/12250056000183/2026/20",
+   "numero_controle_pncp": "12250056000183-1-000020/2026",
+   "orgao_nome": "MUNICIPIO DE BATALHA",
+   "municipio_nome": "Batalha",
+   "uf": "AL",
+   "modalidade_licitacao_nome": "Pregão - Eletrônico",
+   "data_inicio_vigencia": "2026-11-04T18:00",
+   "data_fim_vigencia": "2026-11-18T08:00",
+   "valor_global": null,
+   "situacao_nome": "Divulgada no PNCP",
+   "data_publicacao_pncp": "2026-11-04T17:22:03.665904588"
+  }
+ ],
+ "total": 148
+}
