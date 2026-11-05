@@ -39,8 +39,8 @@ describe('feriados (dados do prazos-br)', () => {
 
 describe('cobertura sempre dita', () => {
   test('tribunal sem calendário próprio: aviso com a lista dos cobertos', () => {
-    const a = avisoCobertura({ tribunal: 'TJSP' }, [2026])!;
-    assert.match(a, /Ainda não temos o calendário forense do TJSP/);
+    const a = avisoCobertura({ tribunal: 'TJAM' }, [2026])!;
+    assert.match(a, /Ainda não temos o calendário forense do TJAM/);
     assert.match(a, /TJMS/);
     assert.match(a, /outros em breve/);
   });

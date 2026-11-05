@@ -27,7 +27,7 @@ npx juris-licita-mcp
 - "Saiu intimação no DJEN em 13/11/2026 para um processo do TJMS em Campo Grande. Prazo de 15 dias úteis: quando vence? Mostre os dias que não contaram."
 - "Qual o prazo da contestação no CPC? E do recurso ordinário na CLT?"
 - "A Fazenda foi intimada eletronicamente em 02/03/2026 e não abriu. Prazo de 15 dias em dobro: quando vence?"
-- "Quais os feriados forenses do TRT24 em dezembro?"
+- "Quais os feriados forenses do TJSP em dezembro?"
 - "Corrija R$ 25.000 de março de 2021 até hoje pelo IPCA-E, ano a ano."
 
 **Licitações**
@@ -159,7 +159,7 @@ Sem chave, toda ferramenta avançada responde normalmente dizendo o que faria e 
 
 ### Cobertura dos calendários forenses
 
-O calendário forense completo (portarias do ano, feriados municipais por comarca, pontos facultativos, recesso) existe hoje para **TJMS** (56 comarcas, anos de 2021 a 2026 conferidos) e **TRT24** (22 cidades, 2026 conferido). Nos demais tribunais o cálculo usa os feriados nacionais, o recesso e a suspensão de 20/12 a 20/01 (CPC art. 220), e **avisa na resposta** que o vencimento real pode ser posterior. Outros tribunais em breve; o formato é aberto e aceita contribuição no [prazos-br](https://github.com/bitbusca/prazos-br/blob/main/CONTRIBUTING.md). Pergunte à IA "quais tribunais estão cobertos?" para ver a lista atual.
+O calendário forense completo (portarias do ano, feriados municipais, pontos facultativos, recesso) vem do [prazos-br](https://github.com/bitbusca/prazos-br) e cobre hoje **22 tribunais**: TJSP, TJRJ, TJMG, TJRS, TJPR, TJSC, TJBA, TJGO, TJPE, TJDFT e TJMS; TRF1, TRF2, TRF4, TRF5 e TRF6; TRT1, TRT2, TRT3, TRT4, TRT15 e TRT24. Na maioria, a capital ou sede tem os feriados municipais; no TJMS e no TRT24, também o interior. A cobertura por ano está em [COBERTURA.md](https://github.com/bitbusca/prazos-br/blob/main/docs/COBERTURA.md). Nos demais tribunais o cálculo usa os feriados nacionais, o recesso e a suspensão de 20/12 a 20/01 (CPC art. 220), e **avisa na resposta** que o vencimento real pode ser posterior. Outros tribunais em breve; o formato é aberto e aceita contribuição no [prazos-br](https://github.com/bitbusca/prazos-br/blob/main/CONTRIBUTING.md). Pergunte à IA "quais tribunais estão cobertos?" para ver a lista atual.
 
 ## Modo avançado (chave BitBusca)
 

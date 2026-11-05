@@ -19,8 +19,8 @@ describe('prazo processual (prazos-br)', () => {
   });
 
   test('tribunal sem calendário: calcula com os nacionais e avisa', () => {
-    const r = prazoProcessual({ inicio: '2026-11-05', dias: 15, tribunal: 'TJSP' });
-    assert.ok(r.avisos.some((a) => /TJSP ainda não tem calendário/.test(a)));
+    const r = prazoProcessual({ inicio: '2026-11-05', dias: 15, tribunal: 'TJAM' });
+    assert.ok(r.avisos.some((a) => /TJAM ainda não tem calendário/.test(a)));
     assert.deepEqual(r.calendariosAplicados, ['nacional']);
   });
 
