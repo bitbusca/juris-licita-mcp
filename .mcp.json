@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "juris-licita": {
+      "command": "npx",
+      "args": ["-y", "juris-licita-mcp"]
+    }
+  }
+}
